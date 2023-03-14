@@ -1,0 +1,32 @@
+/* 设置基础样式 */
+body{
+    /* 指定默认字体 */
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color:#333;
+    background-color: #fff;
+    min-width: 1226px;
+}
+
+/* 统一设置a的样式 */
+a,a:hover{
+    text-decoration: none;
+    color: inherit;
+} 
+a:hover{
+    text-decoration: none;
+}
+
+
+/* 中间容器的默认样式 */
+.w{
+    width: 1226px;
+    margin: 0 auto;
+}
+
+/* 清除浮动与高度塌陷 */
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
