@@ -97,3 +97,113 @@
     background-color: #fff;
 }
 
+
+/* 头部菜单 */
+/* .topHeader{
+
+} */
+
+.topHeader .w{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.topHeader .logo a{
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin-right: 30px;
+    background-image: url("../images/logo-mi2.png");
+    background-size: contain;
+    font-size: 0;
+}
+
+/* 设置中间菜单 */
+.topHeader .menu{
+    display: flex;
+    font-size: 16px;
+}
+
+.topHeader .menu a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10px;
+    text-decoration: none;
+} 
+
+.topHeader .menu  a:hover{
+    color: #ff6700;
+}
+
+.topHeader .category{
+    visibility: hidden;
+}
+
+
+/* 中间搜索框 */
+ .searchForm{
+    position: relative;
+    display: flex;
+    flex: auto;
+    justify-content: end;
+} 
+
+.searchForm input{
+    box-sizing: border-box;
+    width: 244px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    outline: none;
+    padding: 0 6px;
+    font-size: 14px;
+}
+
+.searchForm input:hover,
+.searchForm input:hover + button { 
+    border-color: #c7c7c7
+} 
+
+.searchForm input:focus ~ .hide{
+    display: block;
+}
+
+/*  focus伪类选择器获取焦点 ：当input获取焦点后的样式
+    +兄弟元素选择器
+*/
+.searchForm input:focus,
+.searchForm input:focus + button { 
+    border-color: #ff6700;
+} 
+ 
+.searchForm button{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    font-size: 20px;
+    color: #616161;
+    cursor: p;
+}
+
+.searchForm button:hover{
+    background-color: #ff6700;
+    color: #fff;
+    border: none;
+}
+
+.searchForm .hide{
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 245px;
+    height: 300px;
+    background-color: #fff;  
+    top: 50px;
+    right: 49px;
+    border: 1px solid #ff6700;
+    border-top: none;
+} 
